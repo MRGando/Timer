@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+body {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lobster", cursive;
+  height: 90vh;
+}
+.clock {
+  font-size: 150px;
+  color: white;
+}
+.title {
+  margin-top: -150px;
+  color: white;
+  font-size: 100px;
+}
+.buttons {
+  margin-top: -1em;
+  display: flex;
+}
+.button {
+  color: whitesmoke;
+  margin: 0 10px;
+  border-radius: 10px;
+  border: 1px solid whitesmoke;
+  padding: 5px 15px;
+  font-size: 50px;
+  opacity: 0;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+.animate {
+  animation: animateit 1s forwards infinite;
+}
+@keyframes animateit {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
